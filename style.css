@@ -33,9 +33,9 @@ form {
 form.search input[type=text] {
     position: relative;
     left: 450px;
-    bottom: 58px;
+    bottom: 55px;
     padding: 5px;
-    font-size: 17px;
+    font-size: 13px;
     border: 1px solid grey;
     float: left;
     width: 80%;
@@ -45,23 +45,23 @@ form.search input[type=text] {
   
   form.search button {
     position: relative;
-    left: 466px;
-    bottom: 90px;
+    left: 462px;
+    bottom: 82px;
     float: right;
     width: 20%;
     padding: 5px;
     background: rgb(0, 0, 0);
-    color: white;
-    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
     border: 1px solid grey;
     border-left: none;
     cursor: pointer;
   }
   
   form.search button:hover {
-    background: rgb(41, 6, 197);
-    
-    transition: 0.3s;
+    color: rgb(0, 0, 0);
+    background: rgba(243, 243, 243, 0.89);
+    transition: 0.5s;
   }
   
   form.search::after {
@@ -78,7 +78,7 @@ form.search input[type=text] {
     position: relative;
     width: 200px;
     left: 20px;
-    bottom: 145px;
+    bottom: 137px;
     
 }
 
@@ -389,3 +389,64 @@ a{
     text-align: center;
 }
 
+/* Toegevoegd vanaf 18/03/22 Voor Shop pagina - Patrick */
+
+.boxproductsbox {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    height: 1200px;
+}
+
+
+.productsbox {
+    
+    width: 100%;
+    height:300px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.products {
+    width:200px;
+    text-align: left;
+    /*border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: rgb(150, 161, 161);*/
+    transition: transform .9s ease;
+    
+}
+
+.products:hover {
+    transform: scale(1.2);
+    overflow: hidden;
+    
+}
+
+.products:hover img {
+    position: static;
+    
+}
+
+.products img {
+    width: 200px;
+    height: 200px;
+    border-style: none;
+    background-color: white;
+}
+
+.products-text1 {
+    font-weight: 900;
+    position: relative;
+    bottom: 20px;
+}
+
+.products-text2 {
+    color: red;
+    position: relative;
+    bottom: 20px;
+}
