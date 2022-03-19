@@ -394,8 +394,8 @@ a{
 .boxproductsbox {
     display:flex;
     flex-direction:column;
-    justify-content:space-around;
-    height: 1200px;
+    justify-content:space-evenly;
+    height: 1600px;
 }
 
 
