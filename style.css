@@ -1,87 +1,3 @@
-#list {
-    position: relative;
-    left:0px;
-    display: block;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-around;
-    padding: 15px 500px;
-    border-bottom: solid 1px;
-    border-color: blue;
-    text-decoration: none;
-    word-spacing: 1px;
-    bottom: 1px;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#search {
-    position: relative;
-    display: block;
-    left: 1100px;
-    bottom: 55px;
-    height: 21px;
-}
-
-form {
-    margin:auto;
-    max-width:300px
-}
-
-form.search input[type=text] {
-    position: relative;
-    left: 450px;
-    bottom: 55px;
-    padding: 5px;
-    font-size: 13px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
-    
-  }
-  
-  form.search button {
-    position: relative;
-    left: 462px;
-    bottom: 82px;
-    float: right;
-    width: 20%;
-    padding: 5px;
-    background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    font-size: 13px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
-  }
-  
-  form.search button:hover {
-    color: rgb(0, 0, 0);
-    background: rgba(243, 243, 243, 0.89);
-    transition: 0.5s;
-  }
-  
-  form.search::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-
-
-
-.logo{
-    display: block;
-    position: relative;
-    width: 200px;
-    left: 20px;
-    bottom: 137px;
-    
-}
-
 .homepage{
     padding: 5px;
     border-width: 1px;
@@ -101,11 +17,12 @@ form.search input[type=text] {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
-.informatie{
+.information{
     padding: 5px;
     border-width: 1px;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    width: 20px;
 }
 .homepage:hover {
     border-style: solid;
@@ -138,26 +55,23 @@ form.search input[type=text] {
 }
 
 .chick {
-    display: block;
-    position: relative;
+    display: inline-block;
     left: 96px;
     width: 500px;
     bottom: 70px;
     box-shadow: 4px 2px 2px rgb(0 0 0 / 0.2);
 }
 
+.informatie{
+    display: inline-block;
+    left: 96px;
+    width: 500px;
+    bottom: 70px;
+    
+}
 a{
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
-}
-
-.headnews {
-    display: block;
-    position: relative;
-    left: 700px;
-    bottom: 400px;
-    font-weight: normal;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nieuws:hover{
@@ -167,17 +81,17 @@ a{
     color: rgb(41, 6, 197);
     transition: 0.5s;
 }
-
-.p1 {
-    display: block;
-    position: relative;
-    left: 230px;
-    bottom: 380px;
-    font-weight: normal;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-
+.information:hover{
+    border-style: solid;
+    border-width: 1px;
+    border: rgb(41, 6, 197);
+    color: rgb(41, 6, 197);
+    transition: 0.5s;
 }
+
+
+
+
 .refproducten{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
@@ -193,216 +107,167 @@ a{
 }
 
 .card {
-
-    display: block;
-    position: relative;
-    left: 230px;
-    bottom: 350px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
+    max-width: 600px;
     text-align: center;
-    font-family: arial;
   }
   
   .card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
     color: white;
     background-color: #000;
     text-align: center;
     cursor: pointer;
     width: 100%;
-    font-size: 18px;
+    font-size: 25px;
   }
   
   .card button:hover {
     opacity: 0.7;
+    
   }
-
-  .firsttext {
-      position: relative;
-      left: 20px;
-      top: 20px;
-  }
-
-.computer {
-    display: block;
+.logoo{
+    display: inline-block;
+    width: 10px;
+    padding: 20px;
+    margin-left: 10px;
+}
+.search{
     position: relative;
-    left: 630px;
-    width: 500px;
-    bottom: 350px;
-    box-shadow: 4px 2px 2px rgb(0 0 0 / 0.2);
+    bottom: 50px;
+    left: 100px;
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+}
+.input-search{
+    border-radius: 0px;
+    
+}
+.list{
+    position: relative;
+    bottom: 50px;
+    left: 150px;
+    display: inline-block;
+    margin-right: 290px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
 }
 
-.secondhead {
-    display: block;
-    position: relative;
-    left: 200px;
-    bottom: 200px;
-    font-weight: normal;
+.headnews1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.p1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.headnews2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.p2{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.p2 {
-    display: block;
-    position: relative;
-    right: 340px;
-    bottom: 180px;
-    font-weight: normal;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.a2 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;   
-}
-
-.a2:hover{
-    border-style: solid;
-    border-width: 1px;
-    border: rgb(41, 6, 197);
-    color: rgb(41, 6, 197);
-    transition: 0.5s;
-}
-
-.card2 {
-
-    display: block;
-    position: relative;
-    right: 350px;
-    bottom: 500px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
+header{
+    width: 1300px;
+    display: inline-block;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 0px;
+    padding-top: 0px;
   }
-  
-  .card2 button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  
-  .card2 button:hover {
-    opacity: 0.7;
-  }
+.content1{
+      display: inline-block;
+      justify-content: space-around;
+      padding: 20px;
+      margin-top: 100px;
+}
 
-.vraagpic {
-    display: block;
+.content2{
+    display: inline-block;
+    justify-content:space-around;
+    margin-left: 100px;
     position: relative;
-    left: 96px;
-    width: 500px;
-    bottom: 400px;
-    box-shadow: 4px 2px 2px rgb(0 0 0 / 0.2);
+    bottom: 100px;
 }
 
+.content3{
+    display: inline-block;
+    
+      
+}
 
-.thirdhead {
-    display: block;
+.content4{
     position: relative;
-    left: 750px;
-    bottom: 700px;
-    font-weight: normal;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.p3 {
-    display: block;
-    position: relative;
-    left: 250px;
-    bottom: 680px;
-    font-weight: normal;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    bottom: 100px;
+    left: 20px;
+    display: inline-block;
+    justify-content:space-around;
+    margin-right: 150px;
+
 }
 
-.a3 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black; 
-}
-
-.a3:hover {
-    border-style: solid;
-    border-width: 1px;
-    border: rgb(41, 6, 197);
-    color: rgb(41, 6, 197);
-    transition: 0.5s;
-}
-
-.card3 {
-
-    display: block;
-    position: relative;
-    left: 250px;
-    bottom: 650px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-  }
-  
-  .card3 button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  
-  .card3 button:hover {
-    opacity: 0.7;
-  }
-
-
-
-  footer{
-    position: absolute;
-    bottom: 1;
-    left: 0;
-    right: 0;
+footer{
     background: #111;
-    height: auto;
-    width: 100vw;
-    padding-top: 40px;
     color: #fff;
+    width: 1300px;
+    margin-left: 1px;
 }
 
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+.logo1 {
+    display: inline-block;
+    margin-right: 200px;
+}
+.searchh{
+    display: inline-block;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.allbeyondreparatie{
+    display: inline-block;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Toegevoegd vanaf 18/03/22 Voor Shop pagina - Patrick */
 
-.boxproductsbox {
-    display:flex;
-    flex-direction:column;
-    justify-content:space-evenly;
-    height: 1600px;
+
+.xboxproductsbox {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 20px;
+    height: 2000px;
 }
 
+
+.leftemptyspace {
+    display: flex;
+    flex: 1;
+}
+
+.rightemptyspace {
+    display: flex;
+    flex: 1;
+} 
+
+
+.boxproductsbox {
+    display:flex;
+    flex: 5;
+    flex-direction:column;
+    justify-content:space-evenly;
+    height: 2000px;
+}
 
 .productsbox {
     
     width: 100%;
-    height:300px;
+    height:280px;
     text-align: center;
 
     display: flex;
@@ -411,16 +276,47 @@ a{
 }
 
 .products {
-    width:200px;
-    text-align: left;
-    /*border-style: solid;
+    width:230px;
+    background-color: rgb(60, 231, 38);
+    text-align: center;
+    /* border-style: solid;
     border-width: thin;
-    border-radius: 5px;
-    border-color: rgb(150, 161, 161);*/
+    border-radius: 5px; 
+    border-color: rgb(150, 161, 161); */
     transition: transform .9s ease;
     
 }
 
+.products:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.products-image {
+    width: 230px;
+    height: 230px;
+    border-style: none;
+    background-color: white;
+}
+
+.products-text1 {
+    font-weight: 900;
+    font-size: 22px;
+    position: relative;
+    bottom: 15px;
+    color: white;
+}
+
+.products-text2 {
+    color: red;
+    position: relative;
+    bottom: 20px;
+}
+
+/* hover functie voor het inzoomen van de producten uitgezet */
+
+/*
 .products:hover {
     transform: scale(1.2);
     overflow: hidden;
@@ -431,22 +327,7 @@ a{
     position: static;
     
 }
+*/
 
-.products img {
-    width: 200px;
-    height: 200px;
-    border-style: none;
-    background-color: white;
-}
 
-.products-text1 {
-    font-weight: 900;
-    position: relative;
-    bottom: 20px;
-}
-
-.products-text2 {
-    color: red;
-    position: relative;
-    bottom: 20px;
-}
+/* tot zover shop pagina */
