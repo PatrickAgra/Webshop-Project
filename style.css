@@ -1,250 +1,171 @@
-
-.homepage{
-    padding: 5px;
-    border-width: 1px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.webshop{
-    padding: 5px;
-    border-width: 1px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(73, 53, 53, 0.75), rgba(0, 0, 0, 0.75)),
+    url(Main-Background.jpg);
+  background-size: cover;
+  background-position: center;
 }
-.reparatie{
-    padding: 5px;
-    border-width: 1px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.information{
-    padding: 5px;
-    border-width: 1px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 20px;
+.logo {
+  width: 166px;
+  cursor: pointer;
 }
-.homepage:hover {
-    border-style: solid;
-    border-width: 1px;
-    border: rgb(41, 6, 197);
-    color: rgb(41, 6, 197);
-    transition: 0.5s;
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
 }
-
-.webshop:hover {
-    border-style: solid;
-    border-width: 1px;
-    border: rgb(41, 6, 197);
-    color: rgb(41, 6, 197);
-    transition: 0.5s;
-}
-.reparatie:hover {
-    border-style: solid;
-    border-width: 1px;
-    border: rgb(41, 6, 197);
-    color: rgb(41, 6, 197);
-    transition: 0.5s;
-}
-.informatie:hover {
-    border-style: solid;
-    border-width: 1px;
-    border: rgb(41, 6, 197);
-    color: rgb(41, 6, 197);
-    transition: 0.5s;
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
 }
 
-.chick {
-    display: inline-block;
-    left: 96px;
-    width: 500px;
-    bottom: 70px;
-    box-shadow: 4px 2px 2px rgb(0 0 0 / 0.2);
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after {
+  width: 100%;
 }
 
-.informatie{
-    display: inline-block;
-    left: 96px;
-    width: 500px;
-    bottom: 70px;
-    
-}
-a{
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
 }
 
-.nieuws:hover{
-    border-style: solid;
-    border-width: 1px;
-    border: rgb(41, 6, 197);
-    color: rgb(41, 6, 197);
-    transition: 0.5s;
+.content h1 {
+  font-size: 70px;
+  margin-top: 80px;
 }
-.information:hover{
-    border-style: solid;
-    border-width: 1px;
-    border: rgb(41, 6, 197);
-    color: rgb(41, 6, 197);
-    transition: 0.5s;
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
 }
-
-
-
-
-.refproducten{
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    font-weight: bold;
-}
-
-.refproducten:hover{
-    border-style: solid;
-    border-width: 1px;
-    border: rgb(41, 6, 197);
-    color: rgb(41, 6, 197);
-    transition: 0.5s;
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    text-align: center;
-  }
-  
-  .card button {
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 25px;
-  }
-  
-  .card button:hover {
-    opacity: 0.7;
-    
-  }
-.logoo{
-    display: inline-block;
-    width: 10px;
-    padding: 20px;
-    margin-left: 10px;
-}
-.search{
-    position: relative;
-    bottom: 50px;
-    left: 50px;
-    display: inline-block;
-    background-color: rgb(0, 0, 0);
-}
-.input-search{
-    border-radius: 0px;
-    
-}
-.list{
-    position: relative;
-    bottom: 50px;
-    left: 100px;
-    display: inline-block;
-    margin-right: 290px;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    
+span {
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
 }
 
-.headnews1{
-    font-family: Arial, Helvetica, sans-serif;
+.buybutton {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
-.p1{
-    font-family: Arial, Helvetica, sans-serif;
-}
-.headnews2{
-    font-family: Arial, Helvetica, sans-serif;
-}
-.p2{
-    font-family: Arial, Helvetica, sans-serif;
+.repairbutton {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
-header{
-    width: 1300px;
-    display: inline-block;
-    position: fixed;
-    background-color: rgb(255, 255, 255);
-    padding-bottom: 0px;
-    padding-top: 0px;
-  }
-.content1{
-      display: inline-block;
-      justify-content: space-around;
-      padding: 20px;
-      margin-top: 100px;
+button:hover span {
+  width: 100%;
+}
+button:hover {
+  border: none;
 }
 
-.content2{
-    display: inline-block;
-    justify-content:space-around;
-    margin-left: 100px;
-    position: relative;
-    bottom: 100px;
+/* test */
+.head-par-info1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.content3{
-    display: inline-block;
-    
-      
+.container {
+  display: flex;
+  border-radius: 5px;
+  background-color: #535353;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 200px;
 }
 
-.content4{
-    position: relative;
-    bottom: 100px;
-    left: 20px;
-    display: inline-block;
-    justify-content:space-around;
-    margin-right: 150px;
-
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
 }
 
-footer{
-    background: #111;
-    color: #fff;
-    width: 1300px;
-    margin-left: 1px;
+input[type="submit"] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.logo1 {
-    display: inline-block;
-    margin-right: 200px;
-}
-.searchh{
-    display: inline-block;
+input[type="submit"]:hover {
+  background-color: #817a7a;
 }
 
-html {
-    scroll-behavior: smooth;
-  }
-
-.allbeyondreparatie{
-    display: inline-block;
-    justify-content: space-around;
-    padding: 20px;
-    margin-top: 120px;
-    font-family: Arial, Helvetica, sans-serif;
+.header-titel {
+  font-size: 50px;
+  padding-bottom: 40px;
+}
+.par-titel {
+  font-size: 20px;
+}
+.par-titel-2 {
+  font-size: 20px;
 }
 
-.burgerschap{
-    padding: 5px;
-    border-width: 1px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.burgerschap:hover {
-    border-style: solid;
-    border-width: 1px;
-    border: rgb(41, 6, 197);
-    color: rgb(41, 6, 197);
-    transition: 0.5s;
+label {
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
 }
