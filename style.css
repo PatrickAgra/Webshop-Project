@@ -257,6 +257,7 @@ label {
 .menuspace {
   display: flex;
   flex: 1.3;
+  background-color: white;
 }
 
 .boxproductsbox {
@@ -269,7 +270,7 @@ label {
 .productsbox {
 
   width: 100%;
-  height: 280px;
+  height: 265px;
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
@@ -279,7 +280,8 @@ label {
 
 .products {
   width: 230px;
-  background-color: rgb(60, 231, 38);
+  background-color: #009688;
+  border-radius: 9px;
   text-align: center;
   text-decoration: none;
   /* border-style: solid;
@@ -301,6 +303,7 @@ label {
   height: 230px;
   border-style: none;
   background-color: white;
+  border-radius: 9px 9px 0 0;
 }
 
 .products-text1 {
@@ -324,6 +327,20 @@ hr {
   justify-content: space-evenly;
   background-color: white;
   /*background-color: aqua;*/
+}
+
+.leftemptyspace-specific {
+  display: flex;
+  flex: 1;
+  height: auto;
+  background-color: white;
+}
+
+.rightemptyspace-specific {
+  display: flex;
+  flex: 1;
+  height: auto;
+  background-color: white;
 }
 
 .specific-product {
@@ -352,6 +369,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 80%;
 
 }
 
@@ -383,7 +401,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 300px;
+  width: 20%;
 }
 
 .product-text2 svg {
