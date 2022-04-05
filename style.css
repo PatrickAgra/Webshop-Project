@@ -4,7 +4,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
   background-color: #000000;
 }
 
@@ -16,6 +16,7 @@ body{
   background-size: cover;
   background-position: center;
 }
+
 .navbar {
   width: 85%;
   margin: auto;
@@ -25,16 +26,19 @@ body{
   align-items: center;
   justify-content: space-between;
 }
+
 .logo {
   width: 180px;
   cursor: pointer;
 }
+
 .navbar ul li {
   list-style: none;
   display: inline-block;
   margin: 0 20px;
   position: relative;
 }
+
 .navbar ul li a {
   text-decoration: none;
   color: #fff;
@@ -50,6 +54,7 @@ body{
   bottom: -10px;
   transition: 0.5s;
 }
+
 .navbar ul li:hover::after {
   width: 100%;
 }
@@ -67,11 +72,13 @@ body{
   font-size: 70px;
   margin-top: 80px;
 }
+
 .content p {
   margin: 20px auto;
   font-weight: 100;
   line-height: 25px;
 }
+
 button {
   width: 200px;
   padding: 15px 0;
@@ -103,6 +110,7 @@ span {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
+
 .repairbutton {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
@@ -111,6 +119,7 @@ span {
 button:hover span {
   width: 100%;
 }
+
 button:hover {
   border: none;
 }
@@ -162,10 +171,12 @@ input[type="submit"]:hover {
   font-size: 50px;
   padding-bottom: 40px;
 }
+
 .par-titel {
   font-size: 20px;
   text-align: center;
 }
+
 .par-titel-2 {
   font-size: 20px;
   text-align: center;
@@ -199,7 +210,7 @@ label {
   position: absolute;
   background-color: #787171;
   min-width: 220px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   text-align: center;
 }
@@ -211,7 +222,9 @@ label {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #a4a4a4}
+.dropdown-content a:hover {
+  background-color: #a4a4a4
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -219,4 +232,243 @@ label {
 
 .dropdown:hover .dropbtn {
   background-color: #009688;
+}
+
+/* toegevoegd voor shoppagina */
+
+.xboxproductsbox {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.leftemptyspace {
+  display: flex;
+  flex: 1;
+  height: auto;
+}
+
+.rightemptyspace {
+  display: flex;
+  flex: 1;
+  height: auto;
+}
+
+.menuspace {
+  display: flex;
+  flex: 1.3;
+}
+
+.boxproductsbox {
+  display: flex;
+  flex: 5;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.productsbox {
+
+  width: 100%;
+  height: 280px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.products {
+  width: 230px;
+  background-color: rgb(60, 231, 38);
+  text-align: center;
+  text-decoration: none;
+  /* border-style: solid;
+    border-width: thin;
+    border-radius: 5px; 
+    border-color: rgb(150, 161, 161); */
+  transition: transform .9s ease;
+
+}
+
+.products:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.products-image {
+  width: 230px;
+  height: 230px;
+  border-style: none;
+  background-color: white;
+}
+
+.products-text1 {
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+hr {
+  border-top: #009688;
+}
+
+.specific-productbox {
+
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex: 6;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: white;
+  /*background-color: aqua;*/
+}
+
+.specific-product {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  margin: 20px;
+  background-color: white;
+  /*background-color: rgb(60, 231, 38); */
+  text-decoration: none;
+  /* border-style: solid;
+  border-width: thin;
+  border-radius: 5px; 
+  border-color: rgb(150, 161, 161); */
+
+}
+
+.specific-product-image {
+  width: 200px;
+  height: 200px;
+  border-style: none;
+  background-color: white;
+}
+
+.product-text1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.product-brand {
+  margin: 12px;
+  font-size: 15px;
+}
+
+.product-name {
+  margin-left: 12px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.product-description {
+  margin-left: 12px;
+  font-size: 15px;
+}
+
+.rating {
+  margin: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 15px;
+}
+
+.product-text2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+}
+
+.product-text2 svg {
+  height: 2rem;
+  margin: 9px;
+  color: blue;
+}
+
+.shoppingcart {
+  height: 3rem;
+}
+
+.pay-icons {
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.product-price {
+  color: red;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 15px;
+}
+
+.product-availability {
+  color: rgb(30, 200, 30);
+  margin-left: 15px;
+  padding: 3px;
+  font-size: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(30, 200, 30);
+}
+
+.product-availability2 {
+  color: rgb(30, 200, 30);
+  margin-left: 15px;
+  margin-top: 3px;
+  font-size: 15px;
+}
+
+/* toegevoegd voor burgerschap */
+
+.burgerschapbox {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: white;
+  padding: 30px;
+}
+
+.burgerschap1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-weight: 900;
+}
+
+.burgerschap2 {
+  font-size: 1.125rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+.burgerschap3 {
+  height: 420px;
+  width: 700px;
+}
+
+.burgerschap2 li {
+  font-size: 1.125rem;
+  margin-left: 22px;
+  margin-top: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+.burgerschap2 a {
+  font-weight: bold;
+  color: black;
+}
+
+.burgerschap2 a:hover {
+  color: teal;
+  transition: 0.5s;
 }
