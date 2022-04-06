@@ -4,11 +4,15 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  background-color: #000000;
+}
+
 .banner {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(73, 53, 53, 0.75), rgba(0, 0, 0, 0.75)),
-    url(images/Main-Background.jpg);
+    url(./images/Main-Background.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -17,14 +21,14 @@
   width: 85%;
   margin: auto;
   padding: 35px 0;
-  padding-top: 10px;
+  padding-top: 1px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
-  width: 166px;
+  width: 180px;
   cursor: pointer;
 }
 
@@ -120,7 +124,8 @@ button:hover {
   border: none;
 }
 
-/* test */
+/* informatie forum */
+
 .head-par-info1 {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
@@ -132,10 +137,9 @@ button:hover {
 .container {
   display: flex;
   border-radius: 5px;
-  background-color: #535353;
-  padding-left: 100px;
-  padding-right: 100px;
-  margin-top: 200px;
+  padding-left: 217px;
+  padding-right: 177px;
+  margin-top: 136px;
 }
 
 input[type="text"],
@@ -170,15 +174,64 @@ input[type="submit"]:hover {
 
 .par-titel {
   font-size: 20px;
+  text-align: center;
 }
 
 .par-titel-2 {
   font-size: 20px;
+  text-align: center;
 }
 
 label {
   color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* dropdown */
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  border-color: #009688;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #787171;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #a4a4a4
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #009688;
 }
 
 /* toegevoegd voor shoppagina */
@@ -193,19 +246,18 @@ label {
   display: flex;
   flex: 1;
   height: auto;
-  background-color: white;
 }
 
 .rightemptyspace {
   display: flex;
   flex: 1;
   height: auto;
-  background-color: white;
 }
 
 .menuspace {
   display: flex;
   flex: 1.3;
+  background-color: white;
 }
 
 .boxproductsbox {
@@ -218,7 +270,7 @@ label {
 .productsbox {
 
   width: 100%;
-  height: 280px;
+  height: 265px;
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
@@ -228,7 +280,8 @@ label {
 
 .products {
   width: 230px;
-  background-color: rgb(60, 231, 38);
+  background-color: #009688;
+  border-radius: 9px;
   text-align: center;
   text-decoration: none;
   /* border-style: solid;
@@ -250,6 +303,7 @@ label {
   height: 230px;
   border-style: none;
   background-color: white;
+  border-radius: 9px 9px 0 0;
 }
 
 .products-text1 {
@@ -273,6 +327,20 @@ hr {
   justify-content: space-evenly;
   background-color: white;
   /*background-color: aqua;*/
+}
+
+.leftemptyspace-specific {
+  display: flex;
+  flex: 1;
+  height: auto;
+  background-color: white;
+}
+
+.rightemptyspace-specific {
+  display: flex;
+  flex: 1;
+  height: auto;
+  background-color: white;
 }
 
 .specific-product {
@@ -301,6 +369,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 80%;
 
 }
 
@@ -332,7 +401,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 300px;
+  width: 20%;
 }
 
 .product-text2 svg {
@@ -421,7 +490,11 @@ hr {
   color: teal;
   transition: 0.5s;
 }
+
+/* toegevoegd voor reparatie */
+
 .uwu {
-    width:500px;
-    height:500px;}
-(jedidiah reparatie)
+  width: 500px;
+  height: 500px;
+
+}
