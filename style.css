@@ -123,7 +123,7 @@ button:hover {
   border: none;
 }
 
-/* informatie forum */
+/* informatie pagina */
 
 .head-par-info1 {
   font-family: Arial, Helvetica, sans-serif;
@@ -136,9 +136,11 @@ button:hover {
 .container {
   display: flex;
   border-radius: 5px;
-  padding-left: 217px;
-  padding-right: 177px;
-  margin-top: 136px;
+  /*padding-left: 217px;
+  padding-right: 177px; */
+  margin: auto;
+  width: 70%;
+  margin-top: 50px;
 }
 
 input[type="text"],
@@ -154,7 +156,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #000000;
+  background-color: #009688;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -186,7 +188,26 @@ label {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* dropdown */
+.information-main1 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 70%;
+  margin-top: 60px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.googlemaps{
+  display: flex;
+  margin-left: 30px;
+}
+
+/* dropdown menu */
 
 .dropbtn {
   background-color: transparent;
@@ -207,7 +228,7 @@ label {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #787171;
+  background-color: #8a8a8a;
   min-width: 220px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -284,10 +305,6 @@ label {
   border-radius: 9px;
   text-align: center;
   text-decoration: none;
-  /* border-style: solid;
-    border-width: thin;
-    border-radius: 5px; 
-    border-color: rgb(150, 161, 161); */
   transition: transform .9s ease;
 
 }
@@ -360,7 +377,6 @@ hr {
   flex-direction: column;
   justify-content: space-evenly;
   background-color: white;
-  /*background-color: aqua;*/
 }
 
 .leftemptyspace-specific {
@@ -383,12 +399,7 @@ hr {
   width: 95%;
   margin: 20px;
   background-color: white;
-  /*background-color: rgb(60, 231, 38); */
   text-decoration: none;
-  /* border-style: solid;
-  border-width: thin;
-  border-radius: 5px; 
-  border-color: rgb(150, 161, 161); */
 
 }
 
@@ -541,14 +552,6 @@ hr {
 
 /* toegevoegd voor reparatie */
 
-.uwu {
-  width: 500px;
-  height: 500px;
-
-}
-
-/* pricing? */
-
 * {
   box-sizing: border-box;
 }
@@ -607,16 +610,18 @@ hr {
   }
 }
 
-.responsive-h{
-  text-align: center;
-  color: white;
-}
-.responsive-p{
-  text-align: center;
-  color: white;
-}
-
 .button:hover{
   background-color: black;
   transition: 0.5s;
+}
+
+.reparatie-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  color: white;
 }
